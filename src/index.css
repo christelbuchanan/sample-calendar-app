@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+@layer components {
+  .calendar-day {
+    @apply min-h-[100px] border border-gray-200 p-1 transition-colors hover:bg-gray-50;
+  }
+  
+  .calendar-day-header {
+    @apply py-2 text-center font-semibold;
+  }
+  
+  .calendar-event {
+    @apply mb-1 cursor-pointer rounded-md p-1 text-xs font-medium text-white shadow-sm transition-transform hover:scale-[1.02];
+  }
+  
+  .btn {
+    @apply rounded-md px-4 py-2 font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 bg-white text-gray-700 hover:bg-gray-50;
+  }
+  
+  .input {
+    @apply w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500;
+  }
+  
+  .select {
+    @apply w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500;
+  }
+}
